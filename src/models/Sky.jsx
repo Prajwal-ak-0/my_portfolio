@@ -13,7 +13,7 @@ export function SkyBackGround() {
   });
 
   return (
-    <group ref={modelRef}  scale={[40, 40, 40]} dispose={null}>
+    <group ref={modelRef}  scale={[70, 70, 70]} dispose={null}>
       <mesh
         castShadow
         receiveShadow
