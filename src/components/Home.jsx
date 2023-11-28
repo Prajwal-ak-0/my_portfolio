@@ -1,38 +1,36 @@
 /* eslint-disable react/no-unknown-property */
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import { SkyBackGround } from "../models/Sky";
-import { OrbitControls, Preload } from "@react-three/drei";
+
+import SkyCanvas from "./SkyCanvas";
+
 
 const Home = () => {
 
   return (
-    <section className="w-full -z-10 h-screen fixed">
-      <Canvas >
-        <Suspense>
-          <spotLight
-            position={[10, 10, 10]}
-            angle={0.15}
-            penumbra={1}
-            intensity={1}
-            castShadow
+    <>
+    <SkyCanvas/>
+    <div className="relative">
+      {/* Navbar component goes here */}
+
+      <div className="container mx-auto px-4 py-12 absolute top-0 left-0 w-full h-full flex items-center">
+        <div className="flex-1">
+          <img
+            src='logo.jpeg'
+            alt="Your Image"
+            className="w-full h-auto md:max-w-md lg:max-w-full mx-auto"
           />
-          <hemisphereLight 
-            skyColor={"#ffffff"} 
-            groundColor={"#ffffff"} 
-            intensity={0.5} 
-            position={[0, 50, 0]}
-          />
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2 - 0.1}
-            minPolarAngle={ Math.PI / 2 - 0.1}
-          />
-          <SkyBackGround/>
-        </Suspense>
-        <Preload all />
-      </Canvas>
-    </section>
+        </div>
+        <div className="flex-1 ml-8">
+          <h1 className="text-4xl font-bold mb-4">Hello, I'm Prajwal A K</h1>
+          <p className="text-lg text-gray-600">
+            I'm a 2nd-year Computer Science Engineering student specializing in
+            Artificial Intelligence and Machine Learning at MS Ramaiah
+            Institute of Technology. I anticipate graduating in 2026.
+          </p>
+          {/* Additional sections for your portfolio content can go here */}
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 

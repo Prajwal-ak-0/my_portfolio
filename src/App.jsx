@@ -4,10 +4,12 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Navbar from './components/Navbar';
+import {NextUIProvider} from "@nextui-org/react";
 
 export default function App() {
     return (
       <main className='bg-slate-300/20'>
+        <NextUIProvider>
         <Router>
           <Navbar/>
             <Routes>
@@ -17,6 +19,7 @@ export default function App() {
                 <Route path='/contact' element={<Contact />} />
             </Routes>
         </Router>
+        </NextUIProvider>
       </main>
     )
   }
