@@ -3,11 +3,12 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { SkyBackGround } from "../models/Sky";
 import { OrbitControls, Preload } from "@react-three/drei";
+import CanvasLoader from "./Loader";
 const SkyCanvas = () => {
     return (
         <section className="w-full -z-10 h-screen fixed">
             <Canvas >
-                <Suspense>
+                <Suspense fallback={<CanvasLoader/>}>
                     <spotLight
                         position={[10, 10, 10]}
                         angle={0.15}
