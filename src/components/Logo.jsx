@@ -6,7 +6,7 @@ const Logo = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 640);
+            setIsSmallScreen(window.innerWidth <= 750);
         };
 
         window.addEventListener('resize', handleResize);
@@ -17,8 +17,8 @@ const Logo = () => {
     }, []);
     return (
         <div>
-            <Button radius="full" variant={isSmallScreen ? null : 'shadow'} className="bg-transparent text-white shadow-xl sm:h-24 flex">
-                <Avatar color="default" className="sm:w-16 sm:h-16 bg-transparent" src="logo.png" />
+            <Button radius="full" variant={isSmallScreen ? null : 'shadow'} className="bg-transparent  text-white shadow-xl md:h-24 sm:h-20 flex">
+                <Avatar color="default" className="md:w-16 md:h-16 sm:w-12 sm:h-12 bg-transparent" src="logo.png" />
             </Button>
         </div>
     )

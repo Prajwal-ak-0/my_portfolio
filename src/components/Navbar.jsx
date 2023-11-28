@@ -31,13 +31,13 @@ const Nav = () => {
 
   return (
     <>
-      <div className="fixed hidden top-0 left-0 right-0 z-10 bg-transparent text-white sm:flex justify-between px-8 py-4">
+      <div className="fixed hidden top-0 left-0 right-0 z-10 bg-transparent text-white sm:flex justify-between md:px-8 px-4 py-4">
         <Logo />
         <div className=" sm:block hidden  my-auto ">
           {
             menuItems.map((item) => (
-              <NavLink key={item} className="py-4 px-1" exact to="/" activeClassName="text-blue-500">
-                <Button className="bg-transparent text-white text-xl hover:text-blue-700 hover:shadow-lg" >
+              <NavLink key={item} className="py-4 md:px-1" exact to="/" activeClassName="text-blue-500">
+                <Button className="bg-transparent text-white md:text-xl sm:text-lg hover:text-blue-700 hover:shadow-lg" >
                   {item}
                 </Button>
               </NavLink>
