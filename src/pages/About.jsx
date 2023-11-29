@@ -3,15 +3,15 @@
 
 const About = () => {
   return (
-    <div className="z-10 bg-transparent text-white w-full">
+    <div className="z-10 mx-10 bg-transparent text-white ">
       <h1 className="text-[70px] font-bold">
         About
       </h1>
-      <div className="bg-[#2f80ed] p-4 rounded-md">
-        <h2 className="text-[40px] ">
+      <div className="bg-gradient-to-tr from-[#024296] to-[#021e42] p-4 rounded-md">
+        <h2 className=" text-[40px] ">
           Introduction :
         </h2>
-        <p className="text-justify">
+        <p className="text-justify md:text-lg">
           Hello, I'm Prajwal A K, a second-year Computer Science Engineering student at MS Ramaiah Institute of Technology. My journey in the world of technology began with Data Structures and Algorithms in C++. Over the past 1.5 years, I've mastered DSA concepts and continually practice to sharpen my skills.
 
           Moving forward, I ventured into web development, starting with HTML, CSS, and JavaScript. Building on my foundation, I transitioned to React and developed various projects. Expanding into full-stack development, I explored the MERN stack, incorporating technologies like Tailwind CSS and integrating OpenAI APIs.
