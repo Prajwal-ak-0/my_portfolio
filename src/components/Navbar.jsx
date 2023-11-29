@@ -9,8 +9,8 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(true);
   const menuItems = [
     "Home",
-    "About Me",
-    "Contact Me",
+    "About",
+    "Contact",
     "Projects",
     "Resume"
   ];
@@ -36,7 +36,7 @@ const Nav = () => {
         <div className=" sm:block hidden  my-auto ">
           {
             menuItems.map((item) => (
-              <NavLink key={item} className="py-4 md:px-1" exact to="/" activeClassName="text-blue-500">
+              <NavLink key={item}  to={`#${item.toLowerCase()}`} className="py-4 md:px-1" exact activeClassName="text-blue-500">
                 <Button className="bg-transparent text-white md:text-xl sm:text-lg hover:text-blue-700 hover:shadow-lg" >
                   {item}
                 </Button>
