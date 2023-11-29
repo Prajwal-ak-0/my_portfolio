@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="fixed hidden top-0 left-0 right-0 z-10 bg-transparent text-white sm:flex justify-between md:px-8 px-4 py-4">
+      <div className=" hidden top-0 left-0 right-0 z-10 bg-transparent text-white sm:flex justify-between md:px-8 px-4 py-4">
         <Logo />
         <div className=" sm:block hidden  my-auto ">
           {

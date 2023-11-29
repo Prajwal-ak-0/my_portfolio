@@ -6,7 +6,7 @@ import { OrbitControls, Preload } from "@react-three/drei";
 import CanvasLoader from "./Loader";
 const SkyCanvas = () => {
     return (
-        <section className="w-full absolute -z-10 h-screen ">
+        <section className="fixed -z-10 w-full h-screen ">
             <Canvas >
                 <Suspense fallback={<CanvasLoader/>}>
                     <spotLight

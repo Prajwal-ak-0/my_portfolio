@@ -9,10 +9,13 @@ import SkyCanvas from "./SkyCanvas";
 const Home = () => {
 
   return (
-    <div className="container overflow-y-auto ">
+    <div className=" overflow-y-auto ">
       <SkyCanvas />
-      <Nav/>
-      <Hero />
+      <div className="bg-transparent">
+        <Nav />
+        <Hero />
+        <About />
+      </div>
     </div>
   );
 };
