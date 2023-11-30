@@ -1,10 +1,28 @@
-/* eslint-disable react/no-unescaped-entities */
-
-import { technologies } from "../assets/tech"
-import BallCanvas from "../components/Skills"
-
+import React from "react";
+import { technologies } from "../assets/tech";
+import BallCanvas from "../components/Skills";
+import BlankPDF from "../assets/blank.pdf";
+import { Button } from "@nextui-org/react";
+import { Download } from "lucide-react"
+import Skills from "../components/Skills";
 
 const About = () => {
+  const handleDownload = async () => {
+    const response = await fetch(BlankPDF);
+    const projectFile = await response.blob();
+
+    const url = URL.createObjectURL(projectFile);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "prajwal's_resume.pdf";
+    document.body.appendChild(a);
+
+    a.click();
+
+    document.body.removeChild(a);
+  };
+
   return (
     <div className="z-10 mb-4 md:mx-16 mx-10 bg-transparent text-white ">
       <h1 className="text-[70px] font-bold">
@@ -25,21 +43,19 @@ const About = () => {
             As I progress in my academic and coding journey, I'm excited about the endless possibilities technology offers. Join me on this exploration as we dive into innovation and create meaningful solutions.
           </p>
         </div>
-        <div className="mt-2">
-          <h2 className=" text-[40px]  font-semibold">
-            Skills :
-          </h2>
-          <div className='flex flex-row flex-wrap justify-center gap-10'>
-            {technologies.map((technology) => (
-              <div className='w-28 h-28' key={technology.name}>
-                <BallCanvas icon={technology.icon} />
-              </div>
-            ))}
+        <Skills/>
+        <div className="my-2">
+          <h2 className="text-[40px] font-semibold">Download Resume :</h2>
+          <div className="flex items-center my-4 justify-center">
+            <Button onClcik={handleDownload} radius="full" className="bg-gradient-to-tr text-xl font-semibold items-center from-pink-500 to-yellow-500 text-white hover:shadow-md hover:shadow-yellow-500 w-[275px] h-[75px]">
+              <Download />
+              Download
+            </Button>
           </div>
         </div>
       </div>
-    </div>
-  )
-}
+      </div>
+      );
+};
 
-export default About
+      export default About;
