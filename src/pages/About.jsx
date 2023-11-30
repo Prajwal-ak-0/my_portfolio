@@ -1,5 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { technologies } from "../assets/tech"
+import BallCanvas from "../components/Skills"
+
 
 const About = () => {
   return (
@@ -26,6 +29,13 @@ const About = () => {
           <h2 className=" text-[40px]  font-semibold">
             Skills :
           </h2>
+          <div className='flex flex-row flex-wrap justify-center gap-10'>
+            {technologies.map((technology) => (
+              <div className='w-28 h-28' key={technology.name}>
+                <BallCanvas icon={technology.icon} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
