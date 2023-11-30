@@ -12,9 +12,9 @@ const SkillCard = ({ index, name, image }) => {
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary sm:py-5 rounded-2xl '
+        className='bg-tertiary sm:pb-4 rounded-2xl '
       >
-        <div className="rounded-md md:w-full sm:w-40 w-10 sm:h-40 h-20 ">
+        <div className="rounded-md max-md:w-25 max-sm:h-20 md:w-30 md:h-30">
           <div className=''>
             <img
               src={image}

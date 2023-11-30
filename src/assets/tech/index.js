@@ -10,7 +10,7 @@ import tailwind from "./tailwind.png";
 import typescript from "./typescript.png";
 import threejs from "./threejs.png";
 import next from "./next.png";
-import openai from "./openai.jpg";
+import openai from "./openai.png";
 import c from "./c++.png";
 import selenium from "./selenium.png";
 import aws from "./aws.png";
