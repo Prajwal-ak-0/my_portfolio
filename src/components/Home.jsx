@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import About from "../pages/About";
 import Hero from "../pages/Hero";
+import Projects from "../pages/Projects";
 import Nav from "./Navbar";
 import SkyCanvas from "./SkyCanvas";
 
@@ -12,7 +13,8 @@ const Home = () => {
       <div className="bg-transparent">
         <Nav />
         <Hero />
-      <About />
+        <About />
+        <Projects/> 
       </div>
     </div>
   );

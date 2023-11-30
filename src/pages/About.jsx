@@ -1,6 +1,4 @@
-import React from "react";
-import { technologies } from "../assets/tech";
-import BallCanvas from "../components/Skills";
+/* eslint-disable react/no-unescaped-entities */
 import BlankPDF from "../assets/blank.pdf";
 import { Button } from "@nextui-org/react";
 import { Download } from "lucide-react"
