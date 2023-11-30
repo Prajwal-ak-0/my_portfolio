@@ -2,7 +2,7 @@
 
 const Hero = () => {
     return (
-        <div className="top-0 md:right-0 z-10 bg-transparent text-white p-8 md:w-[700px]">
+        <div className="top-0 md:right-0 z-10 bg-transparent text-white sm:p-8 md:w-[700px]">
             <div>
                 <div className="flex items-center ">
                     <div className="text-white ml-8 sm:text-left text-center">
