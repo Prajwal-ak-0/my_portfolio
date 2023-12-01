@@ -50,7 +50,7 @@ const About = () => {
         <div className="my-2">
           <h2 className="sm:text-[40px] text-[22px] font-semibold">Download Resume :</h2>
           <div className="flex items-center my-4 justify-center">
-            <Button onClcik={handleDownload} radius="full" className="bg-gradient-to-tr text-xl font-semibold items-center from-pink-500 to-yellow-500 text-white hover:shadow-md py-2 hover:shadow-yellow-500 sm:w-[275px] sm:h-[75px]">
+            <Button onClick={handleDownload} radius="full" className="bg-gradient-to-tr text-xl font-semibold items-center from-pink-500 to-yellow-500 text-white hover:shadow-md py-2 hover:shadow-yellow-500 sm:w-[275px] sm:h-[75px]">
               <Download />
               Download
             </Button>

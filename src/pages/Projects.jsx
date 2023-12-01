@@ -1,3 +1,5 @@
+import { projects } from "../assets/tech"
+import ProjectCard from "../components/ProjectCard"
 
 const Projects = () => {
   return (
@@ -6,11 +8,11 @@ const Projects = () => {
         Projects
       </h1>
       <div className="bg-gradient-to-tr from-[#024296] to-[#021e42] sm:p-4  p-2 rounded-md">
-        {/* <div className=' items-center justify-center grid sm:gap-4 gap-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 grid-cols-5'>
-          {technologies.map((tech, index) => (
-            <SkillCard key={index} name={tech.name} image={tech.icon} />
+        <div className=' items-center justify-center grid gap-2 md:grid-cols-3'>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} name={project.name.name} description={project.description} tags={project.tags} image={project.name.image} link={project.github_link} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   )
