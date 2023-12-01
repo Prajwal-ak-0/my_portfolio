@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 import Hero from "../pages/Hero";
 import Projects from "../pages/Projects";
 import Nav from "./Navbar";
@@ -15,6 +16,7 @@ const Home = () => {
         <Hero />
         <About />
         <Projects/> 
+        <Contact/>
       </div>
     </div>
   );

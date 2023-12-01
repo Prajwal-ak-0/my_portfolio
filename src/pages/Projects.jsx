@@ -8,7 +8,7 @@ const Projects = () => {
         Projects
       </h1>
       <div className="bg-gradient-to-tr from-[#024296] to-[#021e42] sm:p-4  p-2 rounded-md">
-        <div className=' items-center justify-center grid gap-2 md:grid-cols-3'>
+        <div className=' items-center justify-center grid gap-2 lg:grid-cols-2 xl:grid-cols-3 '>
           {projects.map((project, index) => (
             <ProjectCard key={index} name={project.name.name} description={project.description} tags={project.tags} image={project.name.image} link={project.github_link} />
           ))}
