@@ -24,6 +24,8 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     toast.success('Message sent successfully');
 
+    // BACKEND INTEGRATION PENDING...
+
     console.log(data)
   };
 
