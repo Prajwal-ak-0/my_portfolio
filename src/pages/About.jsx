@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import BlankPDF from "../assets/blank.pdf";
+import Resume from "../assets/Resume.pdf";
 import { Button } from "@nextui-org/react";
 import { Download } from "lucide-react"
 import Skills from "../components/Skills";
 
 const About = () => {
   const handleDownload = async () => {
-    const response = await fetch(BlankPDF);
+    const response = await fetch(Resume);
     const projectFile = await response.blob();
 
     const url = URL.createObjectURL(projectFile);

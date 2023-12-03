@@ -5,6 +5,7 @@ import * as z from 'zod';
 import { Input } from "@nextui-org/react";
 import { Textarea,Button } from "@nextui-org/react";
 import {toast} from 'react-hot-toast';
+
 const schema = z.object({
   name: z.string().min(2).max(255).refine((val) => val.trim() !== '', { message: 'Name is required' }),
   email: z.string().email({ message: 'Invalid email address' }),
@@ -23,21 +24,7 @@ const ContactForm = () => {
   const onSubmit = async (data) => {
     toast.success('Message sent successfully');
 
-    const response = await fetch('http://localhost:5000/send-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
-
-    const result = await response.json();
-
-    if (result.success) {
-      console.log(result);
-    } else {
-      toast.error('Failed to send message');
-    }
+    console.log(data)
   };
 
 
