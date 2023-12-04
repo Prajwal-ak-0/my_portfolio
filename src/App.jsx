@@ -1,23 +1,27 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+// App.jsx
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { NextUIProvider } from '@nextui-org/react';
 import Home from './components/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import {NextUIProvider} from "@nextui-org/react";
 
-export default function App() {
-    return (
-      <main className=''>
-        <NextUIProvider>
+const App = () => {
+  return (
+    <main>
+      <NextUIProvider>
         <Router>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/contact' element={<Contact />} />
-            </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </Router>
-        </NextUIProvider>
-      </main>
-    )
-  }
+      </NextUIProvider>
+    </main>
+  );
+};
+
+export default App;
