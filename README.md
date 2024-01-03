@@ -13,7 +13,6 @@ Welcome to my portfolio! I am Prajwal A K, a passionate and dedicated student wi
 ## Installation
 
 To run this project on your GitHub Codespace, follow these simple steps:
-
 ```bash
 npm install
 ```
@@ -25,7 +24,6 @@ npm run dev
 ## Features
 
 ### Technologies Used
-
 <div align="center">
   <img src="src/assets/tech/reactjs.png" alt="React" title="React" width="100px" height="100px">
   <img src="src/assets/tech/tailwind.png" alt="Tailwind CSS" title="Tailwind CSS" width="100px" height="100px">
