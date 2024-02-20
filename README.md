@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my portfolio! I am Prajwal A K, a passionate and dedicated student with expertise in MERN Stack, Nextjs, DSA in C++. Throughout my career, I have worked on diverse projects, honing my skills in Threejs, Open AI API's .
+Welcome to my portfolio! I am Prajwal A K, a passionate and dedicated student with expertise in MERN Stack, Nextjs, DSA in C++. Throughout my career, I have worked on diverse projects, honing my skills in Threejs, Open AI API's.
 
 ![Home Page](src/assets/HomePage.png)
 
